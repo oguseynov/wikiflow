@@ -1,4 +1,9 @@
-# Spark flow on top of the Wikipedia SSE Stream
+# Forked version of Spark flow on top of the Wikipedia SSE Stream
+
+AnalyticsConsumer was updated:
+1. Parses consumed messages.
+2. Counts users and topics on a sliding time window with watermark.
+3. Prints the aggregate to console and saves it to delta file.  
 
 ## How-to run
 
